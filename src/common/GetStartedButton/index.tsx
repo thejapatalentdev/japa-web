@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const GetStartedButton = () => {
   return (
-    <Link href="https://japa-courses.vercel.app">
+    <Link href="https://japa-courses-q1sg.vercel.app/">
       <Button className="!h-[76px] !w-[200px]">Get started</Button>
     </Link>
   );
