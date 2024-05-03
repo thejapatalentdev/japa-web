@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import ToastProvider from "@/common/ToastProvider";
 import { Poppins } from "next/font/google";
 export const metadata: Metadata = {
-  title: "Japa | open to work",
+  title: "Japa | Refine your skills",
   icons: {
     icon: "../app/favicon.ico",
   },
