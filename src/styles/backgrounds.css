@@ -1,0 +1,76 @@
+.hero-bg {
+  background-image: url(../assets/backgrounds/hero.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+}
+
+.benefit-bg {
+  background-image: url(../assets/backgrounds/benefits.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+}
+
+.about-bg {
+  background-image: url(../assets/backgrounds/about.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top;
+}
+
+.about-header-bg {
+  background-image: url(../assets/backgrounds/about-header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-bg {
+  background-image: url(../assets/backgrounds/contact.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+}
+
+.faq-bg {
+  background-image: url(../assets/backgrounds/faq.svg);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: top right;
+}
+
+.faq-header-bg {
+  background-image: url(../assets/backgrounds/faq-header.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-img {
+  background-image: url('../assets/backgrounds/onboarding-hero.png');
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-carousel-1 {
+  background-image: url('../assets/backgrounds/laptop.png');
+  height: 20vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-carousel-2 {
+  background-image: url('../assets/backgrounds/question.png');
+  height: 20vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.course-hero {
+  background-image: url('../assets//images/auth/hero.png');
+  height: 50vh;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
