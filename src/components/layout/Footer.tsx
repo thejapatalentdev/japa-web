@@ -6,6 +6,35 @@ import LinkedinIcon from "@/assets/icons/socials/linkedin.svg";
 import JapaLogo from "../../assets/shapes/JapaLogo.svg";
 
 const Footer = () => {
+  const Icons = [
+    {
+      href: "https://www.linkedin.com/company/japaglobal/?viewAsMember=true",
+      icon: LinkedinIcon,
+      alt: "Japa Linkedln profile",
+    },
+    {
+      href: "https://www.instagram.com/japatechglobal",
+      icon: InstagramIcon,
+      alt: "Japa Instagram Profile",
+    },
+  ];
+  const About = [
+    {
+      id: 1,
+      text: "Our Mission",
+      href: "https://www.japatalent.com/about#",
+    },
+    {
+      id: 2,
+      text: "Our Vision",
+      href: "https://www.japatalent.com/about#vision",
+    },
+    {
+      id: 3,
+      text: "FAQ",
+      href: "https://www.japatalent.com/faq",
+    },
+  ];
   return (
     <footer className="mt-[100px] border-t border-t-primary">
       <div className="px-primary  pb-[70px] pt-10 ">
@@ -17,88 +46,95 @@ const Footer = () => {
             alt="Japa Logo"
             className="lg:w-32"
           />
-          <div className="flex flex-wrap gap-12">
-            <ul className="flex flex-col gap-5">
-              <p className="text-xl lg:text-3xl font-medium mb-5">Networks</p>
-              <li className="text-lg lg:text-2xl">
-                <Link href="/about" className="hover:text-primary duration-300">
-                  About us
-                </Link>
-              </li>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/contact"
-                  className="hover:text-primary duration-300"
-                >
-                  Contact us
-                </Link>
-              </li>
-            </ul>
-            <ul className="flex flex-col gap-5">
-              <p className="text-xl lg:text-3xl font-medium mb-5">Jobs</p>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/marketplace"
-                  className="hover:text-primary duration-300"
-                >
-                  Remote Job Marketplace
-                </Link>
-              </li>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/training"
-                  className="hover:text-primary duration-300"
-                >
-                  Training Programs
-                </Link>
-              </li>
-            </ul>
-            <ul className="flex flex-col gap-5">
-              <p className="text-xl lg:text-3xl font-medium mb-5">Resources</p>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/training"
-                  className="hover:text-primary duration-300"
-                >
-                  Training Programs
-                </Link>
-              </li>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/cv-template"
-                  className="hover:text-primary duration-300"
-                >
-                  CV Templates
-                </Link>
-              </li>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/cv-revamp"
-                  className="hover:text-primary duration-300"
-                >
-                  CV Revamp
-                </Link>
-              </li>
-              <li className="text-lg lg:text-2xl">
-                <Link
-                  href="/community"
-                  className="hover:text-primary duration-300"
-                >
-                  Community
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="flex items-center justify-between flex-wrap gap-10 mt-[100px]">
-          <p className="font-medium text-lg lg:text-2xl">Connect with Japa</p>
-          <div className="flex items-center gap-10">
-            <a href="https://www.instagram.com/japa__global/">
-              <Image src={InstagramIcon} alt="JAPA Instagram Profile" />
-            </a>
-            <a href="https://www.linkedin.com/company/job-alerts-place-africa-japa/">
-              <Image src={LinkedinIcon} alt="JAPA Linkedin Profile" />
-            </a>
+          <div className="flex flex-wrap gap-12 mx-auto">
+            <div className="Jcontainer w-full flex lg:flex-row md:flex-row flex-col justify-around">
+              <div className="flex flex-col gap-8 p-4 md:p-8 lg:p-8">
+                <div className="cursor-pointer flex flex-col">
+                  <p className="lg:text-2xl mg:text-xl text-lg text-purple-600 mb-4">
+                    About Us
+                  </p>
+                  <ul className="lg:text-2xl mg:text-xl text-lg">
+                    {About.map((us) => (
+                      <Link href={us.href} key={us.id}>
+                        <li className="mb-2">{us.text}</li>
+                      </Link>
+                    ))}
+                  </ul>
+                </div>
+                <div>
+                  <h1 className="lg:text-2xl mg:text-xl text-lg text-purple-600">
+                    Contact Us
+                  </h1>
+                  <p className="my-3">
+                    <span className="text-purple-600 text-xl">Email:</span>{" "}
+                    thejapaglobal@gmail.com
+                  </p>
+                  <p>
+                    ​ <span className="text-purple-600">Tel:</span> +234
+                    8128206869
+                  </p>
+                </div>
+                <div>
+                  <p className="text-xl mb-6">Follow Us</p>
+                  <div className="flex gap-4">
+                    {Icons.map((item) => (
+                      <Link
+                        href={item.href}
+                        target="_blank"
+                        key={item.href}
+                        rel="noreferrer noopener"
+                        className="w-12 h-12 flex bg-[#ffffff1a] rounded-md backdrop-blur-sm border border-[#ffffff1a]"
+                      >
+                        <Image src={item.icon} alt={item.alt} />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="cursor-pointer p-8">
+                <div>
+                  <p className="lg:text-2xl mg:text-xl text-lg text-purple-600 mb-8">
+                    Available Courses
+                  </p>
+                  <ol className="lg:text-2xl mg:text-xl text-lg">
+                    <li className="mb-3 hover:text-purple-600 ">
+                      <Link href="https://japa-courses-q1sg.vercel.app/data-analysis">
+                        Data Analysis
+                      </Link>
+                    </li>
+                    <li className="mb-3 hover:text-purple-600 ">
+                      <Link href="https://japa-courses-q1sg.vercel.app/social-media-management">
+                        Social Media Management
+                      </Link>
+                    </li>
+                    <li className="hover:text-purple-600">
+                      <Link href="https://japa-courses-q1sg.vercel.app/product-management">
+                        Product Management
+                      </Link>
+                    </li>
+                  </ol>
+                </div>
+                <div className="mt-8">
+                  <p className="lg:text-2xl mg:text-xl text-lg text-purple-600 mb-8">
+                    Coming Courses**
+                  </p>
+                  <ul className="lg:text-2xl mg:text-xl text-lg">
+                    <li className="mb-3 hover:text-purple-600">
+                      Cybersecurity
+                    </li>
+                    <li className="mb-3 hover:text-purple-600">
+                      Product Design
+                    </li>
+                    <li className="mb-3 hover:text-purple-600">
+                      Machine Learning
+                    </li>
+                    <li className="mb-3 hover:text-purple-600">
+                      Digital Marketing
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
