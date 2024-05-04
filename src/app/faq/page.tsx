@@ -16,13 +16,13 @@ const FAQPage = () => {
         <p className="text-lg lg:text-[22px] text-[#3D3D3D] mb-[52px] mt-[44px]">
           Welcome to Japa Faq! Here, we answer all the questions you have about
           our tech-centric courses and offerings. At Japa, we pride ourselves on
-          providing a diverse array of courses tailored to suit every learner's
-          interests and career goals. While we currently specialize in code
-          tech, including courses in Artificial Intelligence (AI) and Machine
-          Learning, we're excited to announce our plans to expand our offerings
-          even further. Stay tuned for updates on our upcoming non-code tech
-          courses, designed to equip you with the skills and knowledge needed to
-          thrive in the rapidly evolving tech landscape.
+          providing a diverse array of courses tailored to suit every
+          learner&apos;s interests and career goals. While we currently
+          specialize in code tech, including courses in Artificial Intelligence
+          (AI) and Machine Learning, we&apos;re excited to announce our plans to
+          expand our offerings even further. Stay tuned for updates on our
+          upcoming non-code tech courses, designed to equip you with the skills
+          and knowledge needed to thrive in the rapidly evolving tech landscape.
         </p>
         <QuestionList />
         <div className="pt-[89px] faq-bg">
