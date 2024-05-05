@@ -27,15 +27,15 @@ export default function Navbar() {
 
   return (
     <header className="flex items-center justify-center h-[17vh] w-full bg-white border-b border-gray-100">
-      <div className="w-full flex justify-between md:flex-row lg:flex-row gap-4 items-center Jcontainer">
+      <div className="w-full flex justify-between md:flex-row lg:flex-row gap-4 items-end Jcontainer">
         <div
           onClick={handleNavStateChange}
           className="z-10 cursor-pointer lg:hidden"
         >
-          <div className="flex">
+          <div className="flex h-full items-start">
             <FontAwesomeIcon
               icon={faBars}
-              className="text-[#7232fa]  text-[1.6rem] md:text-[1.7rem]"
+              className="text-[#7232fa]  text-[1.6rem] md:text-[2rem]"
             />
           </div>
         </div>
