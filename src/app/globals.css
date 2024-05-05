@@ -159,3 +159,250 @@ textarea:focus select:focus {
   width: 100%;
   background: #7d30ee;
 }
+
+.card {
+  color: whitesmoke;
+  box-shadow: 0px 0px 20px 20px;
+}
+.services-submenu {
+  width: 24rem;
+  position: absolute;
+  top: 85px;
+  list-style: none;
+  text-align: start;
+  color: #151418;
+}
+
+.gContainer {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+}
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+.services-submenu li {
+  background: white;
+  color: #151418;
+  cursor: pointer;
+}
+
+.services-submenu li a:hover {
+  background: white;
+  color: #7d30ee;
+}
+
+.services-submenu.clicked {
+  transition: opacity 0.1s, transform 0.4s;
+}
+.box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.5rem;
+}
+.box2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+
+.submenu-item {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #151418;
+  padding: 7px;
+  margin: 5px 25px;
+  transition: all 300ms ease-in-out;
+}
+
+.submenu-item:hover {
+  color: #7d30ee;
+}
+
+.hero {
+  min-height: 100vh;
+  padding-top: 12rem;
+  background: url(/src/app//assets/Learn.webp) no-repeat;
+  background-position: center;
+  block-size: cover;
+}
+
+@media (min-width: 320px) {
+  .Jcontainer {
+    max-width: 280px;
+    margin: auto;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 375px) {
+  .Jcontainer {
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 425px) {
+  .Jcontainer {
+    max-width: 400px;
+    margin: auto;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Jcontainer {
+    max-width: 680px;
+    margin: auto;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 820px) {
+  .Jcontainer {
+    max-width: 800px;
+    max-height: 100%;
+    margin: auto;
+  }
+}
+@media (min-width: 992px) {
+  .Jcontainer {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .developerImg {
+    max-width: 22rem;
+  }
+  .gContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .Jcontainer {
+    max-width: 900px;
+    margin: auto;
+  }
+  .developerImg {
+    max-width: 22rem;
+  }
+
+  .cardContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2.5rem;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}
+@media (min-width: 1120px) {
+  .Jcontainer {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  .developerImg {
+    max-width: 22rem;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .Jcontainer {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}
+@media (min-width: 1440px) {
+  .Jcontainer {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+  }
+
+  .gContainer {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+  }
+}

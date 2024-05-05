@@ -44,10 +44,10 @@ const Footer = () => {
             width={100}
             height={100}
             alt="Japa Logo"
-            className="lg:w-32"
+            className="lg:w-32 hidden lg:block"
           />
           <div className="flex flex-wrap gap-12 mx-auto">
-            <div className="Jcontainer w-full flex lg:flex-row md:flex-row flex-col justify-around">
+            <div className="w-full flex lg:flex-row md:flex-row flex-col justify-around lg:gap-40">
               <div className="flex flex-col gap-8 p-4 md:p-8 lg:p-8">
                 <div className="cursor-pointer flex flex-col">
                   <p className="lg:text-2xl mg:text-xl text-lg text-purple-600 mb-4">

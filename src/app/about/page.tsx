@@ -8,10 +8,13 @@ const AboutPage = () => {
   return (
     <AppLayout>
       <div className="px-primary">
-        <header className="about-header-bg w-full h-[230px] items-center flex justify-center text-[30px] lg:text-[45px] text-center text-white rounded-[15px]">
+        <header
+          id="mission"
+          className="about-header-bg w-full h-[230px] items-center flex justify-center text-[30px] lg:text-[45px] text-center text-white rounded-[15px]"
+        >
           <h1>About us</h1>
         </header>
-        <div id="vision" className="mt-11 about-bg">
+        <div className="mt-11 about-bg">
           <p className="text-lg lg:text-[22px] text-[#3D3D3D]">
             With Africa’s youthful population of 1.4 billion, 60% of whom are
             under 25, the continent stands as the world’s youngest. This
@@ -34,7 +37,10 @@ const AboutPage = () => {
             prevent African talents from reaching their full potential and
             empower them to succeed on a global scale.
           </p>
-          <h2 className="mt-[74px] text-[#4A4949] font-medium text-[30px] lg:text-[45px] mb-[15px]">
+          <h2
+            id="vision"
+            className="mt-[74px] text-[#4A4949] font-medium text-[30px] lg:text-[45px] mb-[15px]"
+          >
             JAPA’s Vision
           </h2>
           <p className="text-lg lg:text-[22px] text-[#3D3D3D]">
