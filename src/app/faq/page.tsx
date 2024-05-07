@@ -18,7 +18,7 @@ const FAQPage = () => {
           about our tech-centric courses and offerings. At Japa, we pride
           ourselves on providing a diverse array of courses tailored to suit
           every learner&apos;s interests and career goals. While we currently
-          specialize In No Code Tech including Courses Data Analysis and
+          specialize In No Code Tech Courses like Data Analysis and
           Product Management. We&apos;re excited to announce our plans to expand
           our offerings even further. Stay tuned for updates on our upcoming
           non-code tech courses, designed to equip you with the skills and
