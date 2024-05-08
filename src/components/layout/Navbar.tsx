@@ -35,7 +35,6 @@ const Navbar = () => {
         <a
           className="border border-primary rounded-[5px] flex h-[40px] md:h-[62px] w-[209px] items-center justify-center gap-[11px] text-primary md:text-[21px] duration-300 hover:bg-primary hover:text-white group"
           href={mainVideoLink}
-          target="_blank"
         >
           <span>Watch Video</span>
           <Image
