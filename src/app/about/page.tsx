@@ -28,7 +28,7 @@ const AboutPage = () => {
           <h2 className="mt-[74px] text-[#4A4949] font-medium text-[30px] lg:text-[45px] mb-[15px]">
             JAPA’s Mission
           </h2>
-          <p className="text-lg lg:text-[22px] text-[#3D3D3D]">
+          <p id="vision" className="text-lg lg:text-[22px] text-[#3D3D3D]">
             JAPA is dedicated to unlocking the potential of Africa’s youth by
             connecting them globally for outstanding success. We believe that
             every young person in Africa deserves the chance to thrive, and we
@@ -37,10 +37,7 @@ const AboutPage = () => {
             prevent African talents from reaching their full potential and
             empower them to succeed on a global scale.
           </p>
-          <h2
-            id="vision"
-            className="mt-[74px] text-[#4A4949] font-medium text-[30px] lg:text-[45px] mb-[15px]"
-          >
+          <h2 className="mt-[74px] text-[#4A4949] font-medium text-[30px] lg:text-[45px] mb-[15px]">
             JAPA’s Vision
           </h2>
           <p className="text-lg lg:text-[22px] text-[#3D3D3D]">

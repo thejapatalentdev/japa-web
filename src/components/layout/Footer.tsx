@@ -22,17 +22,17 @@ const Footer = () => {
     {
       id: 1,
       text: "Our Mission",
-      href: "https://www.japatalent.com/about#",
+      href: "/about#mission",
     },
     {
       id: 2,
       text: "Our Vision",
-      href: "https://www.japatalent.com/about#vision",
+      href: "/about#vision",
     },
     {
       id: 3,
       text: "FAQ",
-      href: "https://www.japatalent.com/faq",
+      href: "/faq",
     },
   ];
   return (
