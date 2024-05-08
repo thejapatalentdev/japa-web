@@ -106,7 +106,9 @@ const Footer = () => {
                       </Link>
                     </li>
                     <li className="hover:text-purple-600">
-                      <Link href="/product-management">Product Management</Link>
+                      <Link href="/courses/product-management">
+                        Product Management
+                      </Link>
                     </li>
                   </ol>
                 </div>
