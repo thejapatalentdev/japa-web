@@ -98,19 +98,15 @@ const Footer = () => {
                   </p>
                   <ol className="lg:text-2xl mg:text-xl text-lg">
                     <li className="mb-3 hover:text-purple-600 ">
-                      <Link href="https://japa-courses-q1sg.vercel.app/data-analysis">
-                        Data Analysis
-                      </Link>
+                      <Link href="/courses/data-analysis">Data Analysis</Link>
                     </li>
                     <li className="mb-3 hover:text-purple-600 ">
-                      <Link href="https://japa-courses-q1sg.vercel.app/social-media-management">
+                      <Link href="/courses/social-media-management">
                         Social Media Management
                       </Link>
                     </li>
                     <li className="hover:text-purple-600">
-                      <Link href="https://japa-courses-q1sg.vercel.app/product-management">
-                        Product Management
-                      </Link>
+                      <Link href="/product-management">Product Management</Link>
                     </li>
                   </ol>
                 </div>

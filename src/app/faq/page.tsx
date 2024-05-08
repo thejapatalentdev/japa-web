@@ -35,8 +35,11 @@ const FAQPage = () => {
               alt="Blog"
               className="w-full h-full object-cover"
             />
-            <Link href="/courses" className="absolute bottom-9 right-[60px]">
-              <Button className="!h-[76px] !w-[300px]">
+            <Link
+              href="/courses"
+              className="absolute bottom-9 m-auto lg:right-[60px] md:right-[40px] sm:right-[36px] right-[20px]"
+            >
+              <Button className=" h-[76px] w-[220px] md:w-[280px] lg:w-[300px]">
                 Check Our Courses
               </Button>
             </Link>

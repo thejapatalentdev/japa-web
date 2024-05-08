@@ -16,7 +16,7 @@ const Navbar = () => {
           width={100}
           height={100}
           alt="Japa Logo"
-          className="lg:w-48 md:w-48 sm:w-48"
+          className="lg:w-48 md:w-40 sm:w-38 w-36"
         />
       </Link>
       <div className="flex-[50%] items-center justify-center gap-[1vw] hidden md:flex">
@@ -31,8 +31,8 @@ const Navbar = () => {
         ))}
       </div>
       <MobileMenu />
-      <div className="flex-[50%] flex justify-end w-full">
-        <a
+      <div className="hidden lg:hidden flex-[50%] xl:flex lg:justify-end w-full">
+        <Link
           className="border border-primary rounded-[5px] flex h-[40px] md:h-[62px] w-[209px] items-center justify-center gap-[11px] text-primary md:text-[21px] duration-300 hover:bg-primary hover:text-white group"
           href={mainVideoLink}
         >
@@ -42,7 +42,7 @@ const Navbar = () => {
             alt="Play"
             className="h-5 w-auto md:h-auto object-contain group-hover:brightness-0 group-hover:invert duration-300"
           />
-        </a>
+        </Link>
       </div>
     </nav>
   );
