@@ -73,18 +73,14 @@ export default function Navbar() {
               {isOpen && (
                 <div className="bg-purple-400 text-[#000406] absolute top-20 flex flex-col item-start rounded-lg p-2 w-full shadow-lg">
                   {serviceDropdown.map((item) => (
-                    <div
+                    <Link
+                      href={item.path}
+                      onClick={handleLinkClick}
                       key={item.id}
-                      className="py-4 px-2 flex justify-between hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4 "
+                      className="font-mdeium text-[#000406] hover:text-white lg:text-xl py-4 px-2 flex justify-between hover:bg-blue-300 cursor-pointer rounded-r-lg border-l-transparent hover:border-l-white border-l-4 "
                     >
-                      <h3 className="font-mdeium">
-                        <Link href={item.path} onClick={handleLinkClick}>
-                          <p className="text-[#000406] hover:text-white lg:text-xl">
-                            {item.title}
-                          </p>
-                        </Link>
-                      </h3>
-                    </div>
+                      <h3>{item.title}</h3>
+                    </Link>
                   ))}
                 </div>
               )}
